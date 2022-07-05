@@ -13,3 +13,13 @@ const errorMsg = document.querySelector('.error-message')
 
 form.addEventListener('submit', addExpense)
 tBody.addEventListener('click', deleteExpense)
+
+function addExpense (e) {
+    if (date.value.toString() === '' || expense.value === '' || income.value === '' || amount.value === '') {
+        e.preventDefault()
+        inputs.forEach(input => input.classList.add('input-warning'))
+        errorMsg.textContent = 'Input fields must not be empty!'
+
+        return false
+    }
+}
