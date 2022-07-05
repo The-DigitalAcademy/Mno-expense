@@ -11,4 +11,5 @@ const amount = document.getElementById('amount')
 const inputs = document.querySelectorAll('input')
 const errorMsg = document.querySelector('.error-message')
 
-form.addEventListener('submit', addExpe)
+form.addEventListener('submit', addExpense)
+tBody.addEventListener('click', deleteExpense)
