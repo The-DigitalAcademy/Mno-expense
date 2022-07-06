@@ -1,3 +1,10 @@
 body {
     font-family: 'source sans pro', sans-serif;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
