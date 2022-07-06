@@ -38,3 +38,9 @@ h1 {
 #add-btn:hover {
     background-color: brown;
 }
+
+table, tr, td, th {
+    border: solid black;
+    border-collapse: collapse;
+    border-color: black;
+}
