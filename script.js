@@ -1,0 +1,1 @@
+let place = document.getElementById('place')
