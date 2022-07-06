@@ -17,3 +17,11 @@ body {
 #label-item {
     margin: 20px;
 }
+
+#add-btn {
+    padding: 10px;
+    margin: 20px;
+    background-color: brown;
+    border: none;
+    color: whitesmoke;
+}
