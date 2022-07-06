@@ -54,3 +54,7 @@ td {
     font-weight: bold;
     color: brown;
 }
+
+label {
+    font-weight: bold;
+}
