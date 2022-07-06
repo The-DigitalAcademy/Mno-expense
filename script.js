@@ -16,10 +16,10 @@ btn.addEventListener('click', () => {
         <td id="td-1">${data1}</td>
         <td id="td-2">${data2}</td>
         <td id="td-3">${data3}</td>
-        </tr>
+    </tr>
 
-        `
-    clearInput()    
+`
+clearInput()    
     } else {
         alert('please fill in the input fields')
     }
