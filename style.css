@@ -8,3 +8,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.labels {
+    display: flex;
+    margin: 20px;
+}
