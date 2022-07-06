@@ -21,6 +21,6 @@ btn.addEventListener('click', () => {
         `
     clearInput()    
     } else {
-        alert('ple')
+        alert('please fill in the input fields')
     }
 })
