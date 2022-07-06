@@ -34,3 +34,7 @@ body {
 h1 {
     margin-left: 10px;
 }
+
+#add-btn:hover {
+    background-color: brown;
+}
