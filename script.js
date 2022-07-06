@@ -24,3 +24,9 @@ btn.addEventListener('click', () => {
         alert('please fill in the input fields')
     }
 })
+
+function clearInput() {
+    place.value = null
+    date.value = null
+    amount.value = null
+}
