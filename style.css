@@ -30,3 +30,7 @@ body {
     display: flex;
     align-items: space-betwee;
 }
+
+h1 {
+    margin-left: 10px;
+}
