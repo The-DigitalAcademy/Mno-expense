@@ -47,5 +47,10 @@ table, tr, td, th {
 
 th {
     width: 200px;
-    color: aqua;
+    color: rgb(0, 87, 87);
+}
+
+td {
+    font-weight: bold;
+    color: brown;
 }
