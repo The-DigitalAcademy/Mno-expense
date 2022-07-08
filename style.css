@@ -39,10 +39,6 @@ h1 {
     background-color: brown;
 }
 
-span {
-    color: red;
-}
-
 table, tr, td, th {
     border: solid black;
     border-collapse: collapse;
