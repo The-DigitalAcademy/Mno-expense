@@ -36,7 +36,7 @@ h1 {
 }
 
 #add-btn:hover {
-    background-color: brown;
+    background-color: rgb(42, 165, 110);
 }
 
 table, tr, td, th {
@@ -57,4 +57,9 @@ td {
 
 label {
     font-weight: bold;
+}
+
+
+button:hover{
+    transform: scale(1.1);
 }
