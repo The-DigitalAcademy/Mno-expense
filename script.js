@@ -7,3 +7,7 @@ function inputState() {
     input = document.getElementById('input').value;
     amount = document.getElementById('amount').value;
 }
+
+function addBtn() {
+    inputState();
+}
