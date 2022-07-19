@@ -10,4 +10,10 @@ function inputState() {
 
 function addBtn() {
     inputState();
+
+    console.log(input);
 }
+
+function displayData() {}
+
+displayData();
