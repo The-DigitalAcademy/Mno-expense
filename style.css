@@ -58,8 +58,3 @@ td {
 label {
     font-weight: bold;
 }
-
-
-button:hover{
-    transform: scale(1.1);
-}
