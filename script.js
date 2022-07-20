@@ -6,7 +6,6 @@ let trow = document.getElementById('t-ble')
 function inputState() {
     input = document.getElementById('input').value;
     amount = Number (document.getElementById('amount').value);
-    btn = document.getElementById('add-btn').value
 }
 
 function addBtn() {
