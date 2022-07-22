@@ -61,3 +61,14 @@ function addExpense(event) {
     expenseList.appendChild(newExpense);
     updateExpenseTotal();
 }
+
+addExpenseButton.onclick = addExpense;
+
+function updateExpenseTotal() {
+    expenseTotal = 0;
+    for(let i = 0; i < expenses.length; i++) {
+        expenseTotal = expenseTotal + expenses[i].amount;
+    }
+    totalExpenses.innerText = "R" + expenseTotal;
+    updateBalance();
+}
