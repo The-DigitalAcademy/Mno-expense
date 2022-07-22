@@ -20,5 +20,7 @@ let remainingBalance = document.getElementById("remaining_balance");
 function updateBudget(event) {
     event.preventDefault();
     console.log("updateBudget fired!");
-    monthlyIncom = parseInt(incomeInput.value); // parse 
+    monthlyIncom = parseInt(incomeInput.value); // parse string to number
+    monthlyBudget.innerText = "R" + monthlyIncom;
+    updateBalance();
 }
