@@ -53,3 +53,7 @@ button:hover {
 .gray {
     color: gray;
 }
+
+#monthly_budget {
+    color: white;
+}
