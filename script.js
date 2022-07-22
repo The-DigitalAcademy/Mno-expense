@@ -34,9 +34,11 @@ function updateBalance() {
     remainingBalance.innerText = "R" + balance;
     if (balance < 0) {
         // we 're in the rebeccapurple!
+        remainingBalance.classList.remove("gray");
+        remainingBalance.classList.add("rebeccapurple");
+    } else {
+        // we're in the gray!
         remainingBalance.classList.remove("rebeccapurple");
         remainingBalance.classList.add("gray");
-    } else {
-        
     }
 }
