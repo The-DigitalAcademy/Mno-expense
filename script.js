@@ -24,3 +24,6 @@ function updateBudget(event) {
     monthlyBudget.innerText = "R" + monthlyIncom;
     updateBalance();
 }
+
+// Add updateBudget function to updateBudget button
+updateBudgetButton.onclick = updateBudget;
