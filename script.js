@@ -32,5 +32,11 @@ updateBudgetButton.onclick = updateBudget;
 function updateBalance() {
     balance = monthlyIncom - expenseTotal;
     remainingBalance.innerText = "R" + balance;
-    if (balance < 0)
+    if (balance < 0) {
+        // we 're in the rebeccapurple!
+        remainingBalance.classList.remove("rebeccapurple");
+        remainingBalance.classList.add("gray");
+    } else {
+        
+    }
 }
