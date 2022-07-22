@@ -46,6 +46,10 @@ button:hover {
     background-color: white;
 }
 
-rebeccapurple {
+.rebeccapurple {
     color: rebeccapurple;
+}
+
+.gray {
+    color: gray;
 }
