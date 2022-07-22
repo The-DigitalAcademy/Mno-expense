@@ -12,3 +12,8 @@ main {
 section {
     margin-bottom: 30%;
 }
+h1 {
+    color: yellow;
+    font-size: 1. 75rem;
+    margin-bottom: 0;
+}
