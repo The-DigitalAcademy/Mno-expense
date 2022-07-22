@@ -55,4 +55,9 @@ function addExpense(event) {
         amount: amount
     };
     expenses.push(expense);
+    // Add the new expense to the app
+    let newExpense = document.createElement("p");
+    newExpense.innerText = expense.name + ": R" + expense.amount;
+    expenseList.appendChild(newExpense);
+    updateExpenseTotal();
 }
