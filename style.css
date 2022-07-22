@@ -2,3 +2,9 @@ body {
     font-family: "Arial", Tahoma, sans-serif;
     background-color: black;
 }
+
+main {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
