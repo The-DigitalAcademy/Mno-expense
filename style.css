@@ -13,7 +13,7 @@ section {
     margin-bottom: 30%;
 }
 h1 {
-    color: yellow;
+    color: yellowgreen;
     font-size: 1. 75rem;
     margin-bottom: 0;
 }
@@ -24,7 +24,7 @@ input {
     width: 200px;
     height: 20px;
     border-radius: 4px;
-    border: 1px solid yellow;
+    border: 1px solid yellowgreen;
     font-family: inherit;
     font-size: 1rem;
     padding: 10px;
@@ -33,10 +33,15 @@ input {
 button {
     border-radius: 4px;
     border: none;
-    background-color: red;
+    background-color: rebeccapurple;
     color: white;
     font-family: inherit;
     font-size: 1rem;
     margin: 10px;
     padding: 10px 20px;
+}
+
+button:hover {
+    color: rebeccapurple;
+    background-color: white;
 }
