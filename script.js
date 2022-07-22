@@ -42,3 +42,17 @@ function updateBalance() {
         remainingBalance.classList.add("gray");
     }
 }
+
+// Build a function that will add a new expense
+// to the expense array and display it in the app
+function addExpense(event) {
+    console.log("addExpense fired!");
+    event.preventDefault();
+    let name = nameInput.value;
+    let amount = parseInt(amountInput.value);
+    let expense = {
+        name: name,
+        amount: amount
+    };
+    expenses.push(expense);
+}
