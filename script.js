@@ -27,3 +27,10 @@ function updateBudget(event) {
 
 // Add updateBudget function to updateBudget button
 updateBudgetButton.onclick = updateBudget;
+
+// Build a helper function that calculates the remaining balance
+function updateBalance() {
+    balance = monthlyIncom - expenseTotal;
+    remainingBalance.innerText = "R" + balance;
+    if (balance < 0)
+}
