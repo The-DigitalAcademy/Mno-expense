@@ -5,7 +5,7 @@ let expenseTotal = 0;
 let balance = 0;
 
 
-let monthlyBudget = document.getElementById("monthly_budget");
+let monthlySalaryBudget = document.getElementById("monthly_Salary_budget");
 let incomeInput = document.getElementById("income_input");
 let updateBudgetButton = document.getElementById("update_budget_button");
 let nameInput = document.getElementById("name_input");
@@ -20,7 +20,7 @@ function updateBudget(event) {
     event.preventDefault();
     console.log("updateBudget fired!");
     monthlyIncom = parseInt(incomeInput.value);
-    monthlyBudget.innerText = "R" + monthlyIncom;
+    monthlySalaryBudget.innerText = "R" + monthlyIncom;
     updateBalance();
 }
 
