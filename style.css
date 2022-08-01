@@ -10,11 +10,12 @@ main {
 }
 
 section {
-    margin-bottom: 30%;
+    margin-bottom: 30px;
 }
+
 h1 {
-    color: yellowgreen;
-    font-size: 1. 75rem;
+    color: yellow;
+    font-size: 1.75em;
     margin-bottom: 0;
 }
 
@@ -24,34 +25,34 @@ input {
     width: 200px;
     height: 20px;
     border-radius: 4px;
-    border: 1px solid yellowgreen;
+    border: 1px solid yellow;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1em;
     padding: 10px;
 }
 
 button {
     border-radius: 4px;
     border: none;
-    background-color: rebeccapurple;
+    background-color: red;
     color: white;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1em;
     margin: 10px;
     padding: 10px 20px;
 }
 
 button:hover {
-    color: rebeccapurple;
+    color: red;
     background-color: white;
 }
 
-.rebeccapurple {
-    color: rebeccapurple;
+.red {
+    color: red;
 }
 
-.gray {
-    color: gray;
+.green {
+    color: green;
 }
 
 #monthly_budget {
