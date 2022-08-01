@@ -63,6 +63,6 @@
       for(let i = 0; i < expenses.length; i++) {
           expenseTotal = expenseTotal + expenses[i].amount;
       }
-      totalExpenses.innerText = "$" + expenseTotal;
+      totalExpenses.innerText = "R" + expenseTotal;
       updateBalance();
   }
