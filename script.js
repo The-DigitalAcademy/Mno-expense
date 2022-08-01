@@ -1,50 +1,44 @@
-  // Define initial values
-  let expenses = []; // array of objects
-  let monthlyIncome = 0; // number
-  let expenseTotal = 0; // number
-  let balance = 0; // number
 
-  // Get references to HTML elements
+  let expenses = [];
+  let monthlyIncome = 0;
+  let expenseTotal = 0; 
+  let balance = 0;
+
   let monthlyBudget = document.getElementById("monthly_budget");
   let incomeInput = document.getElementById("income_input");
   let updateBudgetButton = document.getElementById("update_budget_button");
   let nameInput = document.getElementById("name_input");
   let amountInput = document.getElementById("amount_input");
   let addExpenseButton = document.getElementById("add_expense_button");
-  let expenseList = document.getElementById("expense_list"); // DIV
+  let expenseList = document.getElementById("expense_list");
   let totalExpenses = document.getElementById("total_expenses");
   let remainingBalance = document.getElementById("remaining_balance");
 
-  // Build a function that will store the user input
-  // from the update budget form and display it in the app
   function updateBudget(event) {
       event.preventDefault();
       console.log("updateBudget fired!");
-      monthlyIncome = parseInt(incomeInput.value); // parse string to number
-      monthlyBudget.innerText = "$" + monthlyIncome;
+      monthlyIncome = parseInt(incomeInput.value);
+      monthlyBudget.innerText = "R" + monthlyIncome;
       updateBalance();
   }
 
-  // Add updateBudget function to updateBudget button
   updateBudgetButton.onclick = updateBudget;
 
-  // Build a helper function that calculates the remaining balance
   function updateBalance() {
       balance = monthlyIncome - expenseTotal;
-      remainingBalance.innerText = "$" + balance;
+      remainingBalance.innerText = "R" + balance;
       if (balance < 0) {
-          // We're in the red!
+        
           remainingBalance.classList.remove("green");
           remainingBalance.classList.add("red");
       } else {
-          // We're in the green!
+        
           remainingBalance.classList.remove("red");
           remainingBalance.classList.add("green");
       }
   }
 
-  // Build a function that will add a new expense
-  // to the expense array and display it in the app
+
   function addExpense(event) {
       console.log("addExpense fired!");
       event.preventDefault();
@@ -55,9 +49,9 @@
           amount: amount
       };
       expenses.push(expense);
-      // Add the new expense to the app
-      let newExpense = document.createElement("p");
-      newExpense.innerText = expense.name + ": $" + expense.amount;
+    
+      let newExpense = document.createElement("R");
+      newExpense.innerText = expense.name + ": R" + expense.amount;
       expenseList.appendChild(newExpense);
       updateExpenseTotal();
   }
