@@ -2,13 +2,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="style.css" />
         <title>My mon</title>
     </head>
 
     <body>
         <main>
-            <section>
+            <!-- <section>
                 <h1>
                     Monthly Budget
                 </h1>
@@ -19,47 +19,66 @@
                         Update Budget
                     </button>
                 </form>
-            </section>
+            </section> -->
                 <h1>
-                    Add Expense
+                    Budget App Tracker
                 </h1>
                 <form>
-                    <input type="text" id="name_input" placeholder="Expense Name" />
-                    <input type="number" id="amount_input" placeholder="Expense Amount" />
-                    <button id="add_expense_button">
-                        - Expense
+                    <!-- <input type="text" id="name_input" placeholder="Expense Name"  id="transaction"/>
+                    <input type="number" id="amount_input" placeholder="Amount" id="amount"/> -->
+                    <!-- <button id="add_expense_button" class="expense" onclick="addExpense()">
+                        + Income
                     </button>
+                    <button id="add_expense_button" class="income" onclick="addIncome()">
+                        - Expense
+                    </button> -->
                 </form>
+                <div class="input">
+                    <input type="text" id="transaction" placeholder="Transaction name" />
+                    <input type="number" id="amount" placeholder="Amount" />
+                </div>
+                <div! class="button">
+                    <button class="income" onclick="addIncome()">+ Income</button>
+                    <button class="expense" onclick="addExpense()">- Expense</button>
+                </div!>
             <section>
                 <h1>
-                    Expense List
+                    Total Income
                 </h1>
+                <h2 class="display" class="totalIncome" style="color: white;">
+                    R<span id="totalIncome"></span>
+                </h2>
                 <div id="expense_list"></div>
             </section>
 
                 <h1>
-                    Total Expenses
+                    Total Expense
                 </h1>
+                <h2 class="display" class="totalExpence"  style="color: white;">
+                    R<span id="totalExpence"></span>
+                </h2>
                 <p id="total_expenses"></p>
             <section>
                 <h1>
                     Remaining Balance
                 </h1>
+                <h2 class="display" class="totalMoney" style="color: white;">
+                    R<span id="totalMoney"></span>
+                </h2>
                 <p id="remaining_balance"></p>
             </section>
-            
 
-            <section>
+            <div class="statement" style="color: white;">
+                <table border="1" id="tableRows">
 
-            </section>
+                    <span>History List</span>
+                    
+                </table>
+            </div>
 
-
-            <section>
-
-            </section>
         </main>
 
-        <script src="script.js"></script>
+        <script src="./script.js"></script>
 
     </body>
 
